@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { PageHeader, Button } from "antd";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <PageHeader
+        ghost={false}
+        title="Flareswap"
+        subTitle="Decentralized cryptocurrency exchange on Flare Network."
+        extra={[
+          <Button key="2">Products</Button>,
+          <Button key="2">Governance</Button>,
+          <Button key="2">Community</Button>,
+          <Button key="2">About</Button>,
+          <Button key="1" type="primary">
+            Launch App
+          </Button>,
+        ]}
+      ></PageHeader>
     </div>
   );
 }
