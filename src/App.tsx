@@ -5,7 +5,7 @@ import About from "./pages/About";
 import Start from "./pages/Start";
 import Trade from "./pages/Trade";
 
-function App() {
+export default function App() {
   return (
     <Router>
       <Layout>
@@ -24,5 +24,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;
