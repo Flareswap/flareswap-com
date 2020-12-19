@@ -79,7 +79,7 @@ export default function SwapCard() {
           </Col>
         </Row>
       </Input.Group>
-      <Button type="primary" block className="margin--top--2">
+      <Button type="primary" shape="round" size="large" block className="margin--top--2">
         Connect wallet
       </Button>
     </div>

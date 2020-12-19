@@ -13,7 +13,7 @@ export default function Start() {
           operating on Flare Network through the use of smart contracts.
         </p>
         <Link to="/features" className="margin--top--1">
-          <Button key="1" type="primary" icon={<PoweroffOutlined />}>
+          <Button key="1" type="primary" shape="round" size="large" icon={<PoweroffOutlined />}>
             Launch App
           </Button>
         </Link>

@@ -16,7 +16,7 @@ export default function Layout({ children }: Props) {
       <PageHeader
         ghost={false}
         title={<div onClick={() => history.push("/")}>Flareswap</div>}
-        subTitle="- decentralized cryptocurrency exchange on the Flare Network."
+        subTitle="- decentralized cryptocurrency exchange operating on Flare Network."
         extra={[
           <Button key="1" type="text">
             Community
@@ -25,7 +25,7 @@ export default function Layout({ children }: Props) {
             About
           </Button>,
           <Link key="3" to="/features">
-            <Button type="primary" icon={<PoweroffOutlined />}>
+            <Button type="primary" shape="round" icon={<PoweroffOutlined />}>
               Launch App
             </Button>
           </Link>,
