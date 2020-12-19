@@ -14,7 +14,7 @@ export default function Start() {
           the Flare ecosystem and established cryptocurrencies through the use
           of smart contracts.
         </p>
-        <Link to="/trade">
+        <Link to="/features">
           <Button key="1" type="primary" icon={<PoweroffOutlined />}>
             Launch App
           </Button>

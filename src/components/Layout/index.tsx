@@ -24,7 +24,7 @@ export default function Layout({ children }: Props) {
           <Button key="2" type="text">
             About
           </Button>,
-          <Link key="3" to="/trade">
+          <Link key="3" to="/features">
             <Button type="primary" icon={<PoweroffOutlined />}>
               Launch App
             </Button>

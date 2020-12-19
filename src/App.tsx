@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import About from "./pages/About";
 import Start from "./pages/Start";
-import Trade from "./pages/Trade";
+import Features from "./pages/Features";
 
 export default function App() {
   return (
@@ -13,8 +13,8 @@ export default function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/trade">
-            <Trade />
+          <Route path="/features">
+            <Features />
           </Route>
           <Route path="/">
             <Start />
