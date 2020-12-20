@@ -10,7 +10,7 @@ export default function Start() {
         <FireOutlined style={{ fontSize: 200, color: "#00C281" }} />
         <p className="margin--top--3">
           Flareswap is a decentralized cryptocurrency exchange <br />
-          operating on Flare Network through the use of smart contracts.
+          operating on <b>Flare Network</b> through the use of smart contracts.
         </p>
         <Link to="/features" className="margin--top--1">
           <Button key="1" type="primary" shape="round" size="large" icon={<PoweroffOutlined />}>
