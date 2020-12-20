@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowDownOutlined } from "@ant-design/icons";
+import { ArrowDownOutlined, ApiOutlined } from "@ant-design/icons";
 import { Button, Col, Divider, Input, Row, Select } from "antd";
 const { Option, OptGroup } = Select;
 
@@ -79,7 +79,14 @@ export default function SwapCard() {
           </Col>
         </Row>
       </Input.Group>
-      <Button type="primary" shape="round" size="large" block className="margin--top--2">
+      <Button
+        type="primary"
+        shape="round"
+        size="large"
+        block
+        className="margin--top--2"
+        icon={<ApiOutlined />}
+      >
         Connect wallet
       </Button>
     </div>

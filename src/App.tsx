@@ -7,11 +7,17 @@ import About from "./pages/About";
 import Start from "./pages/Start";
 import Features from "./pages/Features";
 
+const ROUTES = {
+  ABOUT: "/about",
+  FEATURES: "/features",
+  START: "/",
+};
+
 export default function App() {
   const location = useLocation();
 
   return (
-    <Layout>
+    <Layout showLaunchAppButton={location.pathname !== ROUTES.FEATURES}>
       <TransitionGroup>
         <CSSTransition
           key={location.key}
@@ -19,13 +25,13 @@ export default function App() {
           timeout={{ enter: 300, exit: 0 }}
         >
           <Switch>
-            <Route path="/about">
+            <Route path={ROUTES.ABOUT}>
               <About />
             </Route>
-            <Route path="/features">
+            <Route path={ROUTES.FEATURES}>
               <Features />
             </Route>
-            <Route path="/">
+            <Route path={ROUTES.START}>
               <Start />
             </Route>
           </Switch>

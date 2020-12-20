@@ -1,4 +1,5 @@
 import React from "react";
+import { ApiOutlined } from "@ant-design/icons";
 import { Button, Col, Input, Row, Select } from "antd";
 const { Option, OptGroup } = Select;
 
@@ -40,6 +41,7 @@ export default function StakeCard() {
         size="large"
         block
         className="margin--top--2"
+        icon={<ApiOutlined />}
       >
         Connect wallet
       </Button>

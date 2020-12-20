@@ -1,14 +1,15 @@
 import React from "react";
 import { PageHeader, Button } from "antd";
 import { Link } from "react-router-dom";
-import { PoweroffOutlined } from "@ant-design/icons";
+import { PoweroffOutlined, ApiOutlined } from "@ant-design/icons";
 import { useHistory } from "react-router-dom";
 
 type Props = {
   children: any;
+  showLaunchAppButton: boolean;
 };
 
-export default function Layout({ children }: Props) {
+export default function Layout({ children, showLaunchAppButton }: Props) {
   const history = useHistory();
 
   return (
@@ -24,11 +25,17 @@ export default function Layout({ children }: Props) {
           <Button key="2" type="text">
             About
           </Button>,
-          <Link key="3" to="/features">
-            <Button type="primary" shape="round" icon={<PoweroffOutlined />}>
-              Launch App
+          showLaunchAppButton ? (
+            <Link key="3" to="/features">
+              <Button type="primary" shape="round" icon={<PoweroffOutlined />}>
+                Launch App
+              </Button>
+            </Link>
+          ) : (
+            <Button key="3" type="primary" shape="round" icon={<ApiOutlined />}>
+              Connect wallet
             </Button>
-          </Link>,
+          ),
         ]}
       ></PageHeader>
       {children}
