@@ -19,7 +19,7 @@ export default function SwapCard() {
           </Col>
           <Col span={17}>
             <Select
-              defaultValue="XRP"
+              defaultValue="FLR"
               showSearch
               notFoundContent={noTokenFoundMessage}
               size="large"
@@ -54,7 +54,7 @@ export default function SwapCard() {
           </Col>
           <Col span={17}>
             <Select
-              defaultValue="AAVE"
+              defaultValue="FXRP"
               showSearch
               notFoundContent={noTokenFoundMessage}
               size="large"

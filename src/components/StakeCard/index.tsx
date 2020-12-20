@@ -2,19 +2,7 @@ import React from "react";
 import { Button, Col, Input, Row, Select } from "antd";
 const { Option, OptGroup } = Select;
 
-const optionsAll = [
-  "ETH",
-  "XRP",
-  "FXRP",
-  "FLR",
-  "BCH",
-  "BTC",
-  "AAVE",
-  "UNI",
-  "SUSHI",
-  "SNX",
-  "YFI",
-];
+const optionsAll = ["FXRP", "FLR"];
 
 const noTokenFoundMessage = <div>No token found, try another token list.</div>;
 
@@ -46,7 +34,13 @@ export default function StakeCard() {
           </Col>
         </Row>
       </Input.Group>
-      <Button type="primary" shape="round" size="large" block className="margin--top--2">
+      <Button
+        type="primary"
+        shape="round"
+        size="large"
+        block
+        className="margin--top--2"
+      >
         Connect wallet
       </Button>
     </div>
